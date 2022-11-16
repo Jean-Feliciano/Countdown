@@ -1,4 +1,4 @@
-let countDownDate = new Date("nov 16, 2022 00:00:00").getTime();
+let countDownDate = new Date("dec 31, 2022 00:00:00").getTime();
 let x = setInterval(function(){
     let now = new Date().getTime();
     var distance = countDownDate - now;
@@ -12,4 +12,10 @@ let x = setInterval(function(){
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
-},1000);
+
+    if(distance < 0) {
+        clearInterval(x);
+
+    }
+
+},1000); 

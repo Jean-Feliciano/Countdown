@@ -12,8 +12,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url(./assets/background.svg);
   background: no-repeat, cover;
 }
@@ -100,10 +100,18 @@ body {
   border-radius: 10px;
   margin-top: 31px;
   cursor: pointer;
+  border: #6c63ff solid 2px;
+}
+
+.container button:hover {
+  background-color: #ffffff;
+  color: #6c63ff;
 }
 
 .rocket {
-  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
   width: 607px;
   height: 435px;
 }
